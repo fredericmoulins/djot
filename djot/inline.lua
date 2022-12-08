@@ -167,7 +167,7 @@ function InlineParser.between_matched(c, annotation, defaultmatch, opentest)
         -- including the link text opener
         self:clear_openers(openpos, pos)
         local sp, ep, link
-        if c == "_" then
+        if c == '"' then
           sp, ep, link = bounded_find(subject, "^!?([(%[])", endcloser + 1, endpos)
         end
         if sp then
